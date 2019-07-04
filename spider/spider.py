@@ -7,7 +7,7 @@ import os
 
 #图片下载函数
 def downloadPic(html, keyword):
-    pic_url = re.findall('"objURL":"(.*?)",', html, re.S)
+    pic_url = re.findall('"objURL":"(.*?)"', html, re.S)
     i = 1
     print('找到关键词：' + keyword + '的图片，现在开始下载图片...')
     for each in pic_url:

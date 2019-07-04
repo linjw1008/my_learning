@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>NoSuchKey</Code>
+  <Message>The specified key does not exist. Object [2009-11-02/3061996_b.jpg(700x700)/thumb.jpg] not exist</Message>
+  <Resource>Bucket:product-fe-static,Object:2009-11-02/3061996_b.jpg(700x700)/thumb.jpg</Resource>
+  <RequestId>1561559453685089</RequestId>
+  <HostId>5c90187a6f9df7fdecadea2817356fd2</HostId>
+  <Key></Key>
+  <StatusMessage></StatusMessage>
+</Error>
