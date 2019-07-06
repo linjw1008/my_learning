@@ -16,7 +16,7 @@ python 3
 ## 示例
 
 以下例子用于爬取关键词为“塑料瓶”、“废纸”的图片，默认保存目录，每个关键词爬取的最大数量为120张
-···
-python baidu_image_spider.py -k 塑料瓶 废纸 -n 120
-python baidu_image_spider.py --keyword 塑料瓶 废纸 --num 120
-···
+
+> python baidu_image_spider.py -k 塑料瓶 废纸 -n 120
+
+> python baidu_image_spider.py --keyword 塑料瓶 废纸 --num 120
