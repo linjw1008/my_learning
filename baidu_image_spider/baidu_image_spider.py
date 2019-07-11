@@ -58,7 +58,7 @@ def download_image(image_url_list, dir, iamge_name_begin_num, iamge_name):
         # except requests.exceptions.ConnectionError:
             print('[download_iamge]Error: download picture ' + url + ' failed!!')
             continue
-        save_dir = dir + '/' + iamge_name + '_' + str(i) + '.jpg'
+        save_dir = dir + '/' + iamge_name + '_' + str(i) + '.jpeg'
         fp = open(save_dir, 'wb')
         fp.write(pic.content)
         fp.close()

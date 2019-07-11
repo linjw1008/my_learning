@@ -1,0 +1,11 @@
+battery
+book
+bread
+chicken
+eggshell
+kill
+lamp
+paper
+paperbag
+pill
+towel
