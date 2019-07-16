@@ -1,0 +1,4 @@
+book paperbag towel
+lamp paper
+bread chicken eggShell 
+battery kill pill  

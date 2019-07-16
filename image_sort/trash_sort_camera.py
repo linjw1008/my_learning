@@ -8,7 +8,7 @@ import cv2
 
 # cap = cv2.VideoCapture('E:\迅雷下载\爱、死亡与机器人.Love.Death.and.Robots.S01E01.中英字幕.WEBrip.720P-人人影视.mp4')
 # cap = cv2.VideoCapture('D:\GitHub\my_learning\image_sort\data_set/test_set\WeChat_20190711214631.mp4')
-cap = cv2.VideoCapture('http://admin:admin@192.168.1.109:8081')
+cap = cv2.VideoCapture('http://admin:admin@192.168.0.102:8081')
 
 if cap.isOpened():
     print('open camera')
@@ -76,7 +76,7 @@ with tf.Session() as sess:
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
         cv2.imshow('window', image)
-        if i==60:
+        if i==10:
             image_ = tf.image.encode_jpeg(image).eval()
         # print(image_)
         # predictions = sess.run(softmax_tensor, {'DecodeJpeg/contents:0': image_data})
