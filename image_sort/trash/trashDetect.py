@@ -52,11 +52,9 @@ def worker(frame_q, result_q, trash_type_dir_en, trash_type_dir_cn):
 
         while(True):
             image = frame_q.get()
-            print("1")
             image_resized = cv2.resize(image, (512, 384))
             image_ = tf.image.encode_jpeg(image_resized).eval()
             
-            print("2")
             predictions = sess.run(softmax_tensor, {'DecodeJpeg/contents:0': image_})
             predictions = np.squeeze(predictions)
             top_k = predictions.argsort()[::-1]
