@@ -65,6 +65,12 @@ class Box
             return *this;
         }
     
+        //类成员函数运算符重载 =
+        void operator=(const Box& b)
+        {
+            this->length = b.getLength();
+        }
+        
     private:
         double length;
 };
@@ -99,6 +105,9 @@ int main()
     cout << "box1-- = " << (box1--).getLength() << endl;
 
     cout << "-box1 = " << (-box1).getLength() << endl;
+
+    box2 = box1;
+    cout << "box2 = box1 " << "box2 = " << box2.getLength() << endl;
 
     system("pause");
 
