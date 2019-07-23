@@ -43,11 +43,19 @@ class Box
             return this->length < b.length;
         }
 
-        //类成员函数运算符重载 --
+        //类成员函数运算符重载 -- 前缀递减  先计算
         Box operator--(void)
         {
             this->length--;
             return *this;
+        }
+
+        //类成员函数运算符重载 -- 后缀递减  先返回值
+        Box operator--(int)
+        {
+            Box ret = *this;
+            this->length--;
+            return ret;
         }
 
         //类成员函数运算符重载 -
@@ -86,7 +94,9 @@ int main()
 
     cout << "box1 < box2 ? " << (box1<box2) << endl;
 
-    cout << "box1-- = " << (--box1).getLength() << endl;
+    cout << "--box1 = " << (--box1).getLength() << endl;
+
+    cout << "box1-- = " << (box1--).getLength() << endl;
 
     cout << "-box1 = " << (-box1).getLength() << endl;
 
