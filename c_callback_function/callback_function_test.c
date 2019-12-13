@@ -71,10 +71,3 @@ int main()
 
     printf("The count of gt 2 is: %d\n", user_data.count);
 }
-
-
-
-
-
-
-//https://my.oschina.net/sundq/blog/3002471
